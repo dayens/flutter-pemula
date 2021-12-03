@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dion_pemula1/model/hardware_data.dart';
+import 'package:flutter_dion_pemula1/profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -13,7 +14,9 @@ class HomeScreen extends StatelessWidget {
             icon: const Icon(Icons.account_circle_outlined),
             tooltip: 'Profile',
             onPressed: () {
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ProfileScreen();
+              }));
             },
           ),
         ],
