@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dion_pemula1/detail_screen.dart';
 import 'package:flutter_dion_pemula1/model/hardware_data.dart';
 import 'package:flutter_dion_pemula1/profile_screen.dart';
 
@@ -21,13 +21,14 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-
       body: ListView.builder(
         itemBuilder: (context, index) {
           final HardwareData hardware = hardwareDataList[index];
           return InkWell(
             onTap: () {
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return DetailScreen(hardware: hardware);
+              }));
             },
             child: Card(
               child: Row(
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             hardware.name,
-                            style: TextStyle(fontSize: 16.0),
+                            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
                             height: 10,

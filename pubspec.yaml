@@ -63,8 +63,17 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - images/processor.png
+    - images/mainboard.jpg
+    - images/ram.jpg
+    - images/cdrom.jpg
+    - images/fan.jpg
+    - images/hdd.jpg
+    - images/nic.png
+    - images/soundcard.jpg
+    - images/vga.jpg
     - images/instagram.png
     - images/github.png
+    - images/icon_comp.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

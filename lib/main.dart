@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'package:flutter_dion_pemula1/splash.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,8 +9,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       title: 'Hardware Computer',
       theme: ThemeData(),
-      home: HomeScreen(),
+      home: Splash(),
     );
   }
-
 }

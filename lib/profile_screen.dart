@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -33,7 +32,7 @@ class ProfileScreen extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                'Nama  : Dion Sunardi\nEmail   : dionsuanrdi1999@gmail.com',
+                'Nama  : Dion Sunardi\nEmail   : dionsunardi1999@gmail.com',
                 style: TextStyle(fontSize: 16.0),),
             ),
           ),
