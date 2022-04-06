@@ -4,18 +4,20 @@ import 'package:flutter_dion_pemula1/model/hardware_data.dart';
 import 'package:flutter_dion_pemula1/profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hardware Computer'),
+        title: const Text('Hardware Computer'),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.account_circle_outlined),
             tooltip: 'Profile',
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ProfileScreen();
+                return const ProfileScreen();
               }));
             },
           ),
@@ -36,7 +38,10 @@ class HomeScreen extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     flex: 1,
-                    child: Image.asset(hardware.image),
+                    child: Image.asset(
+                      hardware.image,
+                      height: 110,
+                    ),
                   ),
                   Expanded(
                     flex: 2,
@@ -47,9 +52,10 @@ class HomeScreen extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             hardware.name,
-                            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                            style: const TextStyle(
+                                fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Text(
